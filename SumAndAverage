@@ -1,0 +1,30 @@
+/*
+ * Activity 2.1.1
+ */
+import java.util.Scanner;
+
+public class SumAndAverage
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of values to sum and average: ");
+        int numValues = sc.nextInt();
+        int sum = 0;
+
+        for (int i = 0; i < numValues; i++) {
+            System.out.println("Enter a value: ");
+            int value = sc.nextInt();
+            sum += value;
+        }
+
+        double avg = (double) sum / numValues;
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + avg);
+
+
+
+    }
+
+}
